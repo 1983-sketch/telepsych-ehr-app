@@ -1,1 +1,0 @@
-\# Environment &amp; Secrets (CRITICAL FOR HIPAA) .env .env.\* !.env.example \*.pem \*.key # Python backend/venv/ \_\_pycache\_\_/ \*.py[cod] .pytest\_cache/ # Node / Frontend frontend/node\_modules/ frontend/dist/ .DS\_Store # IDE Caches .vscode/\* !.vscode/settings.json !.vscode/tasks.json !.vscode/launch.json

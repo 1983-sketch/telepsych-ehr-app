@@ -1,5 +1,103 @@
+# Root .gitignore for a monorepo-like frontend (Node) + backend (Python) project
+
+# ----------------
+# Node / frontend
+# ----------------
+# dependencies
 node_modules/
 frontend/node_modules/
+
+# build outputs
+dist/
+build/
+frontend/dist/
+frontend/build/
+out/
+.next/
+.vercel/
+.nuxt/
+.public/
+
+# Vite / bundlers / caches
+.cache/
+.vite/
+.esbuild/
+parcel-cache/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# misc
+.env
+.env.*.local
+.env.local
+.DS_Store
+Thumbs.db
+
+# package managers lockfiles SHOULD be tracked (do NOT ignore):
+# package-lock.json, yarn.lock, pnpm-lock.yaml
+
+# ----------------
+# Python / backend
+# ----------------
+# virtualenvs
+.venv/
+venv/
 backend/venv/
-backend/__pycache__/
+backend/.venv/
+
+# byte-compiled / caches
+__pycache__/
 *.py[cod]
+*$py.class
+
+# distributions / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# test / coverage
+htmlcov/
+.coverage
+.tox/
+.nox/
+.pytest_cache/
+
+# IDE / editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Python environment files
+.env
+.env.*.local
+
+# ----------------
+# Common tooling / OS
+# ----------------
+# Editor temp files
+*.swp
+*.swo
+*.tmp
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# JetBrains
+.idea/
+
+# VS Code settings (optional: keep if you track workspace settings)
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
