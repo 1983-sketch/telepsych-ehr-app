@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "compounds": [
+        {
+            "name": "Full-Stack (FastAPI + Vite)",
+            "configurations": [
+                "Debug FastAPI Backend"
+            ],
+            "preLaunchTask": "Run Vite Frontend"
+        }
+    ],
+    "configurations": [
+        {
+            "name": "Debug FastAPI Backend",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "main:app",
+                "--reload",
+                "--host",
+                "127.0.0.1",
+                "--port",
+                "8000"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/backend"
+            },
+            "jinja": true,
+            "justMyCode": true
+        }
+    ]
+}
